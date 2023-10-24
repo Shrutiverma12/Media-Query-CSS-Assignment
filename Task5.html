@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 5</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        color: white;
+        text-align: center;
+      }
+      header {
+        width: 8vw;
+        background-color: black;
+        height: 100vh;
+      }
+      main {
+        background-color: yellowgreen;
+        width: 84vw;
+      }
+      footer {
+        width: 8vw;
+        background-color: black;
+        height: 100vh;
+      }
+      .sidebar {
+        background-color: greenyellow;
+        height: 50%;
+      }
+      .content {
+        background-color: orange;
+        height: 50%;
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+        .box {
+          width: 100vw;
+          height: 50px;
+        }
+        .footer {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="box">Box1</header>
+      <main>
+        <div class="sidebar box">Box2</div>
+        <div class="content box">Box3</div>
+      </main>
+      <footer class="box footer">Box4</footer>
+    </div>
+  </body>
+</html>

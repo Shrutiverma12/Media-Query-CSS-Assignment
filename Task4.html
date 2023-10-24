@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        margin: 10px;
+      }
+      .child {
+        height: 200px;
+        width: 480px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      .child1 {
+        background: red;
+      }
+      .child2 {
+        background: green;
+      }
+      .child3 {
+        background: blue;
+      }
+      .child4 {
+        background: brown;
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          grid-template-columns: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child child1">Box 1</div>
+      <div class="child child2">Box 2</div>
+      <div class="child child3">Box 3</div>
+      <div class="child child4">Box 4</div>
+    </div>
+  </body>
+</html>
